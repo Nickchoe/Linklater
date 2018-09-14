@@ -1,0 +1,198 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden; }
+
+.card-header:hover {
+  background: teal; }
+
+span {
+  font-size: .05 em;
+  color: orange; }
+
+#foot {
+  font-family: "oxygenregular"; }
+
+#home-icons .fa {
+  font-size: 25px; }
+
+#news {
+  position: relative;
+  background: url(https://i.imgur.com/Gv5gx9f.jpg);
+  min-height: 600px; }
+  #news .primary-overlay {
+    background: rgba(50, 146, 166, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#contact {
+  position: middle; }
+
+#welcome {
+  padding-top: 65px; }
+
+#info {
+  padding-top: 100px; }
+
+h1 {
+  font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif; }
+
+h2 {
+  font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif; }
+
+h3 {
+  font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif; }
+
+h4 {
+  font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;
+  color: #333333;
+  margin: 0pt;
+  width: 100%; }
+
+h5 {
+  font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;
+  margin: 0pt;
+  width: 100%; }
+
+p {
+  font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;
+  color: #333333;
+  line-height: 1.8em;
+  font-size: 85%;
+  margin: 0pt;
+  width: 100%; }
+
+#author {
+  font-family: "oxygenregular";
+  background-color: #f0f5f5; }
+
+#pain {
+  font-family: "oxygenregular";
+  background-color: #f0f5f5; }
+
+.about-bio div {
+  width: 80%;
+  margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    .about-bio div {
+      width: 100%; } }
+  .about-bio div.about-bio-text {
+    border-left: 1px solid black;
+    padding: 5px 30px; }
+    @media screen and (max-width: 480px) {
+      .about-bio div.about-bio-text {
+        border-left: 0px none; } }
+  .about-bio div .col-md-4 ul {
+    text-align: right; }
+    .about-bio div .col-md-4 ul li {
+      margin-bottom: 5px; }
+      .about-bio div .col-md-4 ul li:first-of-type {
+        margin-top: 35px; }
+
+.bio div {
+  width: 90%;
+  margin: 0 auto; }
+
+.title {
+  color: #1aa3ff;
+  border: 1px solid #1aa3ff;
+  padding: 5px;
+  border-radius: 3px; }
+
+body {
+  padding-top: 58px; }
+
+#bio {
+  background-color: #f0f5f5; }
+
+#book {
+  background-color: #f0f5f5; }
+
+.navbar {
+  border-bottom: #00e8d6 3px solid;
+  opacity: 0.8; }
+
+.nav-item.active {
+  border-left: #444 3px solid; }
+
+.carousel-item {
+  height: 500px; }
+
+.carousel-image-1 {
+  background: url(https://i.imgur.com/wd6WFzn.jpg);
+  background-size: cover; }
+
+.carousel-image-2 {
+  background: url(https://i.imgur.com/IXYcKdn.jpg);
+  background-size: cover; }
+
+.carousel-image-3 {
+  background: url(https://i.imgur.com/4lsHS6C.jpg);
+  background-size: cover; }
+
+.fa {
+  font-size: 200px; }
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url(https://i.imgur.com/JxdvZyS.jpg?2);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff; }
+
+.dark-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#about-header {
+  height: 150px;
+  background: url(https://i.imgur.com/uGc3FaF.jpg);
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px; }
+
+#workshops-header {
+  height: 200px;
+  background: url(https://i.imgur.com/ppC1qdml.jpg?1);
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px; }
+
+#contact-header {
+  height: 160px;
+  background: url(https://i.imgur.com/5tVGCjI.jpg);
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px; }
+
+#news-header {
+  height: 200px;
+  background: url(https://i.imgur.com/Eqn4g8Ol.jpg?1);
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px; }
+
+#books-header {
+  height: 200px;
+  background: url(https://i.imgur.com/V729q2C.jpg);
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px; }
