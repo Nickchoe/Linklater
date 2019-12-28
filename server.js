@@ -5,7 +5,7 @@ var Recaptcha = require('express-recaptcha');
 var Mailgun = require('mailgun-js')
 var recaptcha = new Recaptcha('6LfmmDQUAAAAAJzFYLj-n0hI_LKgaSZ8NMvfELsJ', '6LfmmDQUAAAAAAmLKQQQuKMm7bGKZdzrVaBuHck5');
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3002;
 
 // Allow processing of POST URL encoded bodies
 app.use(bodyParser.urlencoded({
