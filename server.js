@@ -1,9 +1,11 @@
+
 var express = require("express");
-var bodyParser = require('body-parser')
-var app = express();  
+var bodyParser = require('body-parser');
+var app = express();
 var Recaptcha = require('express-recaptcha');
-var Mailgun = require('mailgun-js')
+var Mailgun = require('mailgun-js');
 var recaptcha = new Recaptcha('6LfmmDQUAAAAAJzFYLj-n0hI_LKgaSZ8NMvfELsJ', '6LfmmDQUAAAAAAmLKQQQuKMm7bGKZdzrVaBuHck5');
+require('dotenv').config();
 
 var port = process.env.PORT || 3002;
 
@@ -19,12 +21,12 @@ var mailgun = new Mailgun({apiKey: api_key, domain: domain});
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "public/stylesheets/main.css"));
-app.use(express.static(__dirname)); 
+app.use(express.static(__dirname));
 
 app.get("/contact", recaptcha.middleware.render, function(req, res){
   res.render("contact", { captcha:res.recaptcha });
 });
- 
+
 app.post('/contact', function(req, res){
     var data = {
       from: req.body.name + ' <' + req.body.email + '>',
@@ -39,7 +41,7 @@ app.post('/contact', function(req, res){
       } else {
         console.log(body);
       }
-    }); 
+    });
     res.redirect("/");
 });
 
@@ -57,7 +59,7 @@ app.get("/about", function(req, res){
 res.render("about");
 
  });
- 
+
  app.get("/news", function(req, res){
     res.render("news");
     });
@@ -93,19 +95,22 @@ app.get("/workshops", function(req, res){
 
     app.get("/books", function(req, res){
     res.render("books");
-    });    
+    });
 
 
 app.get("/contact", function(req, res){
     res.render("contact");
     });
-    
+
 //$(document).on('click', '[data-toggle="lightbox"]', function(event){
     //event.preventDefault();
     //$(this).ekkoLightbox();
-    
+
 //});
 
 app.listen(port, function(){
     console.log("Linklater server has started");
 });
+
+
+
