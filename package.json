@@ -25,6 +25,10 @@
     "sendgrid": "^5.2.3",
     "serve-favicon": "^2.4.5"
   },
+  "engines": {
+    "node": "~8.15.1",
+    "npm": "~6.4.1"
+  },
   "devDependencies": {
     "@sendgrid/mail": "^6.1.4",
     "browser-sync": "^2.18.13",
