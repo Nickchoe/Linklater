@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Tags for Bootstrap 4 -->
+  <meta charset="utf-8">
+  <title> Linklater Voice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap 4 CSS -->
+
+
+  <!--
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+  -->
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="src/css/bootstrap.min.css" >
+  
+  <!-- custom -->
+  <link rel="stylesheet" href="public/stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  
+  <!-- font awesome -->
+  <link href="./node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+  
+  <!-- javascripts, jQuery.min.js first, then bootstrap.min.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  
+  <!-- ekko-lightbox -->
+  <script src="node_modules/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+  <!-- Navbar -->
+  <body id="home">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container">
+    <button class="navbar-toggler"  data-toggle="collapse"
+              data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="/" class="navbar-brand">Linklater Voice Korea</a>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item li-home">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item li-about">
+            <a href="/about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item li-workshops">
+            <a href="/workshops" class="nav-link">Workshops</a>
+          </li>
+          <li class="nav-item li-books">
+            <a href="/books" class="nav-link">Books</a>
+          </li>
+          <li class="nav-item li-contact">
+            <a href="/contact" class="nav-link">Contact Us</a>
+          </li>
+         </ul>
+      </div>
+  </nav>
+  <script>
+     var page = window.location.pathname.split('/')[1];
+      $('li.' + 'li-' + page).addClass('active');
+  </script>
